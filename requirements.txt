@@ -1,0 +1,124 @@
+## general
+boto3
+jupyter
+matplotlib
+numpy
+pandas
+# dask[complete]
+numba>=0.55
+scikit-image
+scikit-learn
+scipy
+easydict
+addict
+yacs
+tqdm
+rich
+streamlit>=1.8
+# due to lightning2.0 conflict
+protobuf<3.21
+
+## training and logging
+mlflow
+comet_ml
+wandb>=0.12
+webdataset
+deepspeed
+tensorboard
+tensorboardX
+onnx>=1.13
+onnxruntime>=1.13
+fastai>=2.7.10
+
+## PEP8, lint
+autopep8
+flake8>=5
+flake8-fixme
+flake8-functions-names
+flake8-variables-names
+pep8-naming
+pycodestyle
+pylint
+yapf
+black[jupyter]
+pydocstyle
+prospector>=1.10
+mypy
+bandit
+pylama
+
+## pytorch
+torch>=2.0
+torchvision>=0.15
+torchaudio>=2.0
+torchdata>=0.6
+torchtext
+git+https://github.com/facebookresearch/pytorchvideo.git
+lightning>=2.0
+torchinfo>=1.7.2
+torch-fidelity>=0.3
+torchmetrics>=0.11
+pytorch-metric-learning>=2.0
+torch_tb_profiler>=0.4
+
+## huggingface
+huggingface_hub[cli,torch,fastai]>=0.13
+accelerate>=0.17
+datasets[vision,audio]>=2.10
+diffusers>=0.14
+evaluate>=0.4
+tokenizers>=0.13
+transformers>=4.20
+
+## nvidia
+# nvidia-dlprof[pytorch]
+# nvidia-dlprofviewer
+# nvidia-pyindex
+# nvidia-tensorboard-plugin-dlprof
+# git+https://github.com/NVIDIA/apex --global-option="--fast_multihead_attn" --force-reinstall
+# --extra-index-url https://pypi.nvidia.com
+# dask_cudf_cu11>=23.0
+
+## vision-specific
+albumentations>=1.3.0
+imgaug>=0.4.0
+av>=9.2
+decord>=0.6.0
+imageio>=2.25
+imageio-ffmpeg>=0.4.7
+fvcore>=0.1.5.post20220512
+kornia>=0.6.10
+# opencv-python4.7.0.72 doesn't have FFMPEG?
+opencv-python<4.6
+opencv-python-headless<4.6
+timm>=0.6.13
+captum>=0.6
+
+## COCO
+pycocotools>=2.0.6
+kwcoco>=0.5.8
+pycocoevalcap>=1.2
+
+## NLP-related
+# spacy[cuda-autodetect,ja,lookups,transformers]>=3.5  # needs transformers<4.37.0
+spacy[cuda-autodetect,ja,lookups]>=3.5
+spacy-llm
+sentencepiece>=0.1.97
+simpletransformers>=0.63.9
+sentence-transformers>=2.2.2
+rouge_score>=0.1.2
+sudachipy>=0.6.5
+sudachidict_core>=20221021
+seqeval>=1.2.2
+nltk>=3.8
+sacremoses>=0.0.53
+
+## stable diffusion
+# invisible-watermark
+# omegaconf
+# test-tube
+# einops
+
+## sound, audio
+librosa>=0.10
+pydub
